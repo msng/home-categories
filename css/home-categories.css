@@ -1,0 +1,14 @@
+#home_categories_option ul {
+	overflow: hidden;
+}
+
+#home_categories_option li {
+	float: left;
+	min-width: 200px;
+	margin-left: 15px;
+}
+
+#home_categories_option label {
+	margin-left: 5px;
+}
+
