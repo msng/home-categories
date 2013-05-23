@@ -52,8 +52,8 @@ class HomeCategories
 
 		$this->dirname = basename(dirname(__FILE__));
 		$this->basename = plugin_basename(__FILE__);
-		$this->dir_url = WP_PLUGIN_URL . '/' . $this->dirname;
-		$this->admin_action = trailingslashit(get_bloginfo('wpurl')) . 'wp-admin/admin.php?page=' . $this->basename;
+		$this->dir_url = plugins_url($this->dirname);
+		$this->admin_action = admin_url('admin.php?page=' . $this->basename);
 
 		load_plugin_textdomain($this->textdomain, false, $this->dirname . '/languages/');
 
